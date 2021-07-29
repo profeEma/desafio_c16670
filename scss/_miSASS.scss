@@ -1,0 +1,17 @@
+$azul: blue;
+$centrar: center;
+
+.encabezado{background-color:$azul;}
+.encabezado__titulo{font-size:50px;}
+.titulo--color{color:yellow;}
+
+@mixin justify-end {
+	display:flex;
+	justify-content:flex-end;
+}
+
+.navbar--derecha{
+	@media only screen and (min-width:1024px){
+		@include justify-end;
+	}
+}
